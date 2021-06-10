@@ -73,6 +73,8 @@ public class ImagesController {
 
 		// example -> /static/files/DEFAULT/CONTENT/myImage.png
 		
+		System.out.println("SHP-2 fixed");
+		
 		FileContentType imgType = null;
 		
 		if(FileContentType.LOGO.name().equals(imageType)) {
