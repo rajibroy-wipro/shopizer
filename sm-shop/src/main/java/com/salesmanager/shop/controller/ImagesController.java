@@ -74,6 +74,7 @@ public class ImagesController {
 		// example -> /static/files/DEFAULT/CONTENT/myImage.png
 		
 		System.out.println("SHP-2 fixed");
+		System.out.println("SHP-3 fixed");
 		
 		FileContentType imgType = null;
 		
