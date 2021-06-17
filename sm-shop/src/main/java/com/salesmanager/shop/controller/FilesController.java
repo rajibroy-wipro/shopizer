@@ -41,6 +41,7 @@ public class FilesController extends AbstractController {
 	@RequestMapping("/static/files/{storeCode}/{fileName}.{extension}")
 	public @ResponseBody byte[] downloadFile(@PathVariable final String storeCode, @PathVariable final String fileName, @PathVariable final String extension, HttpServletRequest request, HttpServletResponse response) throws IOException, ServiceException {
 
+		System.out.println("SHP-4 fix in progress");
 		// example -> /files/<store code>/myfile.css
 		FileContentType fileType = FileContentType.STATIC_FILE;
 		
