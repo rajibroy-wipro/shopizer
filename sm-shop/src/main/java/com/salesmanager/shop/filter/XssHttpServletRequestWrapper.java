@@ -21,6 +21,7 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
 	 
 	 @Override
 	    public String getHeader(String name) {
+		System.out.println("SHP-5 fix in progress");
 	        String value = super.getHeader(name);
 	        if (value == null)
 	            return null;
@@ -29,6 +30,7 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
 	 
 	 
 	    public String[] getParameterValues(String parameter) {
+		System.out.println("SHP-5 fix in progress");
 	        String[] values = super.getParameterValues(parameter);
 	        if (values == null) {
 	            return null;
@@ -43,6 +45,7 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
 	    
 	    @Override
 	    public String getParameter(String parameter) {
+		System.out.println("SHP-5 fix in progress");
 	        String value = super.getParameter(parameter);
 	        if (value == null) {
 	            return null;
