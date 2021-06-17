@@ -48,7 +48,7 @@ public class AdminFilter extends HandlerInterceptorAdapter {
             HttpServletRequest request,
             HttpServletResponse response,
             Object handler) throws Exception {
-		
+		System.out.println("SHP-5 fix in progress");
 		request.setCharacterEncoding("UTF-8");
 		@SuppressWarnings("unchecked")
 		Map<String,Menu> menus = (Map<String,Menu>) cache.getFromCache("MENUMAP");
@@ -176,7 +176,7 @@ public class AdminFilter extends HandlerInterceptorAdapter {
 	
 	
 	private Menu getMenu(Object object) {
-		
+		System.out.println("SHP-5 fix in progress");
 		Map o = (Map)object;
 		Map menu = (Map)o.get("menu");
 		
