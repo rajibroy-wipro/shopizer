@@ -117,7 +117,7 @@ public class StoreFilter extends HandlerInterceptorAdapter {
 
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-
+		System.out.println("SHP-5 fix in progress");
 		request.setCharacterEncoding("UTF-8");
 
 		/**
@@ -376,7 +376,7 @@ public class StoreFilter extends HandlerInterceptorAdapter {
 
 	@SuppressWarnings("unchecked")
 	private void getMerchantConfigurations(MerchantStore store, HttpServletRequest request) throws Exception {
-
+		System.out.println("SHP-5 fix in progress");
 		StringBuilder configKey = new StringBuilder();
 		configKey.append(store.getId()).append("_").append(Constants.CONFIG_CACHE_KEY);
 
@@ -496,7 +496,7 @@ public class StoreFilter extends HandlerInterceptorAdapter {
 		 * The cache is kept as a Map<String,Object> The key is
 		 * CONTENT_<MERCHANT_ID>_<LOCALE> The value is a List of Content object
 		 */
-
+		System.out.println("SHP-5 fix in progress");
 		StringBuilder contentKey = new StringBuilder();
 		contentKey.append(store.getId()).append("_").append(Constants.CONTENT_CACHE_KEY).append("-")
 				.append(language.getCode());
@@ -699,7 +699,8 @@ public class StoreFilter extends HandlerInterceptorAdapter {
 	// Language language)
 	// throws Exception {
 	private Map<String, List<ReadableCategory>> getCategories(MerchantStore store, Language language) throws Exception {
-
+		System.out.println("SHP-5 fix in progress");
+		System.out.println("SHP-5 fix in progress");
 		// Map<String, List<Category>> objects = new ConcurrentHashMap<String,
 		// List<Category>>();
 		Map<String, List<ReadableCategory>> objects = new ConcurrentHashMap<String, List<ReadableCategory>>();
