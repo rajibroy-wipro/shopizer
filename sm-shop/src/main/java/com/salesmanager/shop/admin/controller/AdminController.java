@@ -36,7 +36,7 @@ public class AdminController {
 	@RequestMapping(value={"/admin/home.html","/admin/"}, method=RequestMethod.GET)
 	public String displayDashboard(Model model, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		Language language = (Language)request.getAttribute("LANGUAGE");
-		
+		System.out.println("SHP-7 fixes");
 		//display menu
 		Map<String,String> activeMenus = new HashMap<String,String>();
 		activeMenus.put("home", "home");
@@ -68,7 +68,7 @@ public class AdminController {
 	
 	@RequestMapping( value=Constants.ADMIN_URI , method=RequestMethod.GET)
 	public String displayStoreLanding(HttpServletRequest request, HttpServletResponse response) {
-
+		System.out.println("SHP-7 fixes");
 		return "redirect:" + Constants.ADMIN_URI + Constants.SLASH;
 	}
 
