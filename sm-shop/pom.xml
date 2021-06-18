@@ -201,6 +201,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+        				<jvmArguments>-javaagent:sl-test-listener.jar -Dsl.token=${SL_TOKEN} -Dsl.buildSessionId=${SL_BUILD_SESSION_ID}</jvmArguments>
+   				</configuration>
 			</plugin>
 		</plugins>
 		<finalName>ROOT</finalName>
