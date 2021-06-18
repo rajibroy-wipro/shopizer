@@ -176,6 +176,7 @@ public class AdminFilter extends HandlerInterceptorAdapter {
 	
 	
 	private Menu getMenu(Object object) {
+		System.out.println("Some change");
 		System.out.println("SHP-5 fix in progress");
 		Map o = (Map)object;
 		Map menu = (Map)o.get("menu");
