@@ -117,6 +117,7 @@ public class ShopProductController {
 	 */
 	@RequestMapping("/{friendlyUrl}.html/ref={ref}")
 	public String displayProductWithReference(@PathVariable final String friendlyUrl, @PathVariable final String ref, Model model, HttpServletRequest request, HttpServletResponse response, Locale locale) throws Exception {
+		System.out.println("TIA Changes");
 		return display(ref, friendlyUrl, model, request, response, locale);
 	}
 
