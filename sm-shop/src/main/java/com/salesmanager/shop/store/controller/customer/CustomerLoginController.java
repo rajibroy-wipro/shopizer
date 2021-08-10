@@ -183,6 +183,7 @@ public class CustomerLoginController extends AbstractController {
 	@RequestMapping(value="/logon.html", method=RequestMethod.POST)
 	public @ResponseBody String jsonLogon(@ModelAttribute SecuredCustomer securedCustomer, HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
+	System.out.println("TIA");
         AjaxResponse jsonObject = this.logon(securedCustomer.getUserName(), securedCustomer.getPassword(), securedCustomer.getStoreCode(), request, response);
         return jsonObject.toJSONString();
         
