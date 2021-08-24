@@ -64,7 +64,7 @@ public class ContactController extends AbstractController {
 	
 	@RequestMapping("/shop/store/contactus.html")
 	public String display(Model model, HttpServletRequest request, HttpServletResponse response, Locale locale) throws Exception {
-		
+		System.out.println("test");
 		MerchantStore store = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 		
 		model.addAttribute("googleMapsKey",googleMapsKey);
