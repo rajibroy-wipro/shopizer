@@ -116,6 +116,8 @@ public class CustomerRegistrationController extends AbstractController {
 	@RequestMapping(value="/registration.html", method=RequestMethod.GET)
 	public String displayRegistration(final Model model, final HttpServletRequest request, final HttpServletResponse response) throws Exception {
 
+		System.out.println("changes");
+		
 		MerchantStore store = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 
 		model.addAttribute( "recapatcha_public_key", siteKeyKey);
