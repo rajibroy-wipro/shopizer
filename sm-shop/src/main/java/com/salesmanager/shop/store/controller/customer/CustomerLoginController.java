@@ -186,6 +186,8 @@ public class CustomerLoginController extends AbstractController {
 	System.out.println("TIA");
 		
 	System.out.println("changes");
+		
+	System.out.println("changes");
         AjaxResponse jsonObject = this.logon(securedCustomer.getUserName(), securedCustomer.getPassword(), securedCustomer.getStoreCode(), request, response);
         return jsonObject.toJSONString();
         
