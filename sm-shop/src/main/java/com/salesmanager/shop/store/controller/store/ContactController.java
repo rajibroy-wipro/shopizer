@@ -66,6 +66,7 @@ public class ContactController extends AbstractController {
 	public String display(Model model, HttpServletRequest request, HttpServletResponse response, Locale locale) throws Exception {
 		
 		System.out.println("changes");
+		System.out.println("TIA-changes");
 		
 		MerchantStore store = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 		
