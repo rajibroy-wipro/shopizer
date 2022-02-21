@@ -67,6 +67,7 @@ public class ContactController extends AbstractController {
 		
 		System.out.println("changes");
 		System.out.println("TIA-changes");
+		System.out.println("TIA-changes-2");
 		
 		MerchantStore store = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 		
