@@ -64,6 +64,7 @@ public class ContactController extends AbstractController {
 	
 	public void a(){
 		System.out.println("method a called from method b");
+		System.out.println("modified method a");
 	}
 	
 	public void b(){
