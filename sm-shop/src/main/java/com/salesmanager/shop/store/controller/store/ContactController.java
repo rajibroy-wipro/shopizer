@@ -62,13 +62,20 @@ public class ContactController extends AbstractController {
 	private final static String CONTACT_LINK = "CONTACT";
 	
 	
+	public void a(){
+		System.out.println("method a called from method b");
+	}
+	
+	public void b(){
+		System.out.println("method b called from method display");
+		a();
+	}
+	
+	
 	@RequestMapping("/shop/store/contactus.html")
 	public String display(Model model, HttpServletRequest request, HttpServletResponse response, Locale locale) throws Exception {
 		
-		System.out.println("changes");
-		System.out.println("TIA-changes");
-		System.out.println("TIA-changes-2");
-		System.out.println("TIA-changes-3");
+		b();
 		
 		MerchantStore store = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 		
