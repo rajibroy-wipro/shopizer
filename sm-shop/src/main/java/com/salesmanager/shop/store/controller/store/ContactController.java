@@ -78,6 +78,8 @@ public class ContactController extends AbstractController {
 		
 		b();
 		
+		System.out.println("TIA - changes for parallel test");
+		
 		MerchantStore store = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 		
 		model.addAttribute("googleMapsKey",googleMapsKey);
