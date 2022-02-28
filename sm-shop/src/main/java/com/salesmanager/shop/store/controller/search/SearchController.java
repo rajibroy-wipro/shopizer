@@ -72,6 +72,7 @@ public class SearchController {
 
 		MerchantStore merchantStore = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 
+		System.out.println("new changes");
 		if(merchantStore!=null) {
 			if(!merchantStore.getCode().equals(store)) {
 				merchantStore = null; //reset for the current request
