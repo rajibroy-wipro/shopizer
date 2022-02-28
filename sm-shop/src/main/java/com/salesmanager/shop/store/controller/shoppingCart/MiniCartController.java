@@ -44,6 +44,7 @@ public class MiniCartController extends AbstractController{
 		Language language = (Language)request.getAttribute(Constants.LANGUAGE);
 		
 		try {
+			System.out.println("new changes");
 			MerchantStore merchantStore = (MerchantStore)request.getAttribute(Constants.MERCHANT_STORE);
 		    Customer customer = getSessionAttribute(  Constants.CUSTOMER, request );
 			ShoppingCartData cart =  shoppingCartFacade.getShoppingCartData(customer,merchantStore,shoppingCartCode, language);
